@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo-MFS</title>
+    <link rel="shortcut icon" href="./Payoo-MFS-Resources/payoo.png" type="image/x-icon">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-outfit{
+            font-family: "Outfit", serif;
+        }
+    </style>
+</head>
+<body class="font-outfit bg-slate-800">
+    <section class="mx-auto max-w-md min-h-screen py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-center items-center mt-10">
+                <div class="mt-10 flex justify-center items-center relative w-9/12 mb-10">
+                    <img class="absolute w-48" src="./assets/bg.png" alt="">
+                    <img src="./assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+        <!-- login section -->
+        <div class="hero">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                        <span class="label-text font-bold">Mobile Number</span>
+                        </label>
+                        <input value="01764447574" id="account-number" type="number" placeholder="Enter Your Number" class="input input-bordered rounded-3xl text-gray-400" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                        <span class="label-text font-bold">4 Digit Pin</span>
+                        </label>
+                        <input value="1234" id="pin" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered rounded-3xl" required />
+                        <!-- <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label> -->
+                    </div>
+                    <div class="form-control mt-6">
+                        <button class="btn btn-primary rounded-3xl font-bold text-lg bg-blue-600 border-none text-white" id="login-btn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script/login.js"></script>
+</body>
+</html>
