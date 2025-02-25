@@ -34,7 +34,7 @@
 </head>
 <body class="font-outfit bg-slate-800">
     <section class="mx-auto max-w-md min-h-screen py-6 bg-gray-200">
-        <header class="bg-base-100 py-3 rounded-3xl">
+        <header class="bg-base-100 py-3">
             <nav class="flex justify-between items-center px-3 border-gray-300 border-b-2 pb-2">
                 <div class="flex">
                     <img class="w-16" src="./assets/Group.png" alt="">
@@ -63,15 +63,15 @@
                         <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
                         <h3 class="text-sm">Transfer Money</h3>
                     </div>
-                    <div class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Bonus" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
                         <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="">
                         <h3 class="text-sm">Get Bonus</h3>
                     </div>
-                    <div class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Bill" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
                         <img class="w-8 mx-auto" src="./assets/purse1.png" alt="">
                         <h3 class="text-sm">Pay Bill</h3>
                     </div>
-                    <div class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Transaction" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
                         <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="">
                         <h3 class="text-sm">Transaction</h3>
                     </div>
@@ -88,7 +88,6 @@
                             <label class="label">
                             <span class="label-text font-bold">Select A Bank</span>
                             </label>
-                            <!-- <input id="account-number" type="number" placeholder="Enter Your Number" class="input input-bordered rounded-3xl text-gray-400" required /> -->
                             <select class="select select-ghost w-full max-w-xs input rounded-3xl text-gray-400 bg-gray-200" required>
                                 <option disabled selected>Select Bank</option>
                                 <option value="B-kash">B-kash</option>
@@ -118,7 +117,7 @@
                             </label> -->
                         </div>
                         <div class="form-control mt-6">
-                            <button id="add-money" class="btn btn-primary rounded-3xl font-semibold text-lg bg-blue-600 border-none text-white" id="login-btn">Add Money</button>
+                            <button id="add-money-btn" class="btn btn-primary rounded-3xl font-semibold text-lg bg-blue-600 border-none text-white">Add Money</button>
                         </div>
                     </form>
                 </div>
@@ -194,9 +193,13 @@
         </section>
 
     </section>
+    <script src="./utilities/utilities.js"></script>
     <script src="./script/toggle.js"></script>
     <script src="./script/addMoney.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/transfer.js"></script>
+    <script src="./script/bonus.js"></script>
+    <script src="./script/bill.js"></script>
+    <script src="./script/transaction.js"></script>
 </body>
 </html>

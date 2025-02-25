@@ -14,8 +14,8 @@ document.getElementById('Add-Money')
 document.getElementById('Cash-Out')
     .addEventListener('click',
         function(){
-            document.getElementById('cashout').style.display = 'block';
             document.getElementById('add-money').style.display = 'none';
+            document.getElementById('cashout').style.display = 'block';
             document.getElementById('transfer').style.display = 'none';
         }
     );
@@ -23,8 +23,32 @@ document.getElementById('Cash-Out')
 document.getElementById('Transfer')
     .addEventListener('click',
         function(){
-            document.getElementById('transfer').style.display = 'block';
-            document.getElementById('cashout').style.display = 'none';
             document.getElementById('add-money').style.display = 'none';
+            document.getElementById('cashout').style.display = 'none';
+            document.getElementById('transfer').style.display = 'block';
+        }
+    );
+document.getElementById('Bonus')
+    .addEventListener('click',
+        function(){
+            document.getElementById('add-money').style.display = 'none';
+            document.getElementById('cashout').style.display = 'none';
+            document.getElementById('transfer').style.display = 'none';
+        }
+    );
+document.getElementById('Bill')
+    .addEventListener('click',
+        function(){
+            document.getElementById('add-money').style.display = 'none';
+            document.getElementById('cashout').style.display = 'none';
+            document.getElementById('transfer').style.display = 'none';
+        }
+    );
+document.getElementById('Transaction')
+    .addEventListener('click',
+        function(){
+            document.getElementById('add-money').style.display = 'none';
+            document.getElementById('cashout').style.display = 'none';
+            document.getElementById('transfer').style.display = 'none';
         }
     );

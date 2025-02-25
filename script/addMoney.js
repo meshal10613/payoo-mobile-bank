@@ -5,20 +5,18 @@ document.getElementById("logout-btn")
         }
     );
 
-document.getElementById('add-money')
+document.getElementById('add-money-btn')
     .addEventListener('click',
         function(event){
             event.preventDefault();
-            const amount = document.getElementById('ammount').value;
-            const convertedAmmount = parseInt(amount);
-            const pin = document.getElementById('pin').value;
-            const convertedPin = parseInt(pin);
-            const mainBalance = document.getElementById("main-balance").innerText;
-            const convertedMainBalance = parseFloat(mainBalance);
-            if(amount && pin){
+            const accountNumber = document.getElementById('account-number').value;
+            const convertedAmmount = getInputValueById('ammount');
+            const convertedPin = getInputValueById('pin');
+            const convertedMainBalance = getInnerTextById('main-balance');
+            if(accountNumber.length === 11){
                 if(convertedPin === 1234){
                     const sum = convertedMainBalance + convertedAmmount;
-                    document.getElementById("main-balance").innerText = sum;
+                    setInnerTextByIdAndValue('main-balance', sum);
                 }else{
                     alert("Enter Valid Pin");
                 }
