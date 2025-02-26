@@ -2,7 +2,7 @@ document.getElementById('add-money').style.display = 'none';
 document.getElementById('cashout').style.display = 'none';
 document.getElementById('transfer').style.display = 'none';
 document.getElementById('bonus').style.display = 'none';
-// document.getElementById('transactions').style.display = 'none';
+document.getElementById('transactions').style.display = 'none';
 document.getElementById('bill').style.display = 'none';
 
 function handleToggle(id, status){
