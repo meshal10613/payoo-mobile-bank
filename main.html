@@ -37,7 +37,7 @@
         <header class="bg-base-100 py-3">
             <nav class="flex justify-between items-center px-3 border-gray-300 border-b-2 pb-2">
                 <div class="flex">
-                    <img class="w-16" src="./assets/Group.png" alt="">
+                    <img id="refresh-btn" class="w-16 cursor-pointer" src="./assets/Group.png" alt="">
                     <div>
                         <h1 class="text-2xl font-bold"> $ <span id="main-balance">4500</span></h1>
                         <p>Available Balance</p>
@@ -51,27 +51,27 @@
                 <p class="text-lg font-extralight">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
                 <div class="cards grid grid-cols-3 gap-3 my-3">
-                    <div id="Add-Money" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Add-Money" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer transition-all hover:scale-90 ease-in-out">
                         <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
                         <h3 class="text-sm">Add Money</h3>
                     </div>
-                    <div id="Cash-Out" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Cash-Out" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer transition-all hover:scale-90 ease-in-out">
                         <img class="w-8 mx-auto" src="./assets/send1.png" alt="">
                         <h3 class="text-sm">Cashout</h3>
                     </div>
-                    <div id="Transfer" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Transfer" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer transition-all hover:scale-90 ease-in-out">
                         <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
                         <h3 class="text-sm">Transfer Money</h3>
                     </div>
-                    <div id="Bonus" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Bonus" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer transition-all hover:scale-90 ease-in-out">
                         <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="">
                         <h3 class="text-sm">Get Bonus</h3>
                     </div>
-                    <div id="Bill" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Bill" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer transition-all hover:scale-90 ease-in-out">
                         <img class="w-8 mx-auto" src="./assets/purse1.png" alt="">
                         <h3 class="text-sm">Pay Bill</h3>
                     </div>
-                    <div id="Transaction" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer">
+                    <div id="Transaction" class="box border border-gray-300 rounded-xl text-center p-4 space-y-2 cursor-pointer transition-all hover:scale-90 ease-in-out">
                         <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="">
                         <h3 class="text-sm">Transaction</h3>
                     </div>
@@ -194,7 +194,7 @@
 
     </section>
     <script src="./utilities/utilities.js"></script>
-    <script src="./script/toggle.js"></script>
+    <script src="./utilities/toggle.js"></script>
     <script src="./script/addMoney.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/transfer.js"></script>

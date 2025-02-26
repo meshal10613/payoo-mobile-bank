@@ -5,6 +5,13 @@ document.getElementById("logout-btn")
         }
     );
 
+document.getElementById('refresh-btn')
+    .addEventListener('click',
+        function(){
+            window.location.href = "./main.html";
+        }
+    )
+
 document.getElementById('add-money-btn')
     .addEventListener('click',
         function(event){
