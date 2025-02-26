@@ -88,7 +88,7 @@
                             <label class="label">
                             <span class="label-text font-bold">Select A Bank</span>
                             </label>
-                            <select class="select select-ghost w-full max-w-xs input rounded-3xl text-gray-400 bg-gray-200" required>
+                            <select id="add-bank" class="select select-ghost w-full max-w-xs input rounded-3xl text-gray-400 bg-gray-200">
                                 <option disabled selected>Select Bank</option>
                                 <option value="B-kash">B-kash</option>
                                 <option value="Nagad">Nagad</option>
@@ -189,6 +189,39 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <section id="bonus">
+            <h1 class="mx-10 text-xl font-semibold my-3">Get Bonus</h1>
+            <div class="hero">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                            <span class="label-text font-bold">Enter Bonus Coupon</span>
+                            </label>
+                            <input id="bonus-coupon" value="HelloWorld" type="text" placeholder="Enter your coupon" class="input rounded-3xl bg-gray-200" required />
+                            <!-- <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            </label> -->
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="bonus-btn" class="btn btn-primary rounded-3xl font-semibold text-lg bg-blue-600 border-none text-white">Get Bonus</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="bill">
+            <h1 class="mx-10 text-xl font-semibold my-3">Pay Bill</h1>
+        </section>
+
+        <section id="transactions">
+            <h1 class="mx-10 text-xl font-semibold my-3">Transaction History</h1>
+            <div id="transaction-container">
+
             </div>
         </section>
 
