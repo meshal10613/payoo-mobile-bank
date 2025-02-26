@@ -47,6 +47,9 @@
             </nav>
 
             <section class="px-3">
+                <marquee direction="left" scrollamount="10">
+                    Get instant 50$ on promocode Payooo
+                </marquee>
                 <h1 class="text-2xl font-semibold py-2">🔥 Welcome to Payooo!</h1>
                 <p class="text-lg font-extralight">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
@@ -201,7 +204,7 @@
                             <label class="label">
                             <span class="label-text font-bold">Enter Bonus Coupon</span>
                             </label>
-                            <input id="bonus-coupon" value="HelloWorld" type="text" placeholder="Enter your coupon" class="input rounded-3xl bg-gray-200" required />
+                            <input id="bonus-coupon" type="text" placeholder="Enter your coupon" class="input rounded-3xl bg-gray-200" required />
                             <!-- <label class="label">
                             <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                             </label> -->
@@ -216,6 +219,47 @@
 
         <section id="bill">
             <h1 class="mx-10 text-xl font-semibold my-3">Pay Bill</h1>
+            <div class="hero">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                            <span class="label-text font-bold">Select A Bank</span>
+                            </label>
+                            <select id="bill-bank" class="select select-ghost w-full max-w-xs input rounded-3xl text-gray-400 bg-gray-200">
+                                <option disabled selected>Select Bank</option>
+                                <option value="B-kash">B-kash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="DBBL">DBBL</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                            <span class="label-text font-bold">Biller Account Number</span>
+                            </label>
+                            <input value="01764447574" id="bill-account-number" type="number" placeholder="Enter 11 digit account number" class="input rounded-3xl text-gray-400 bg-gray-200" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                            <span class="label-text font-bold">Ammount to Pay</span>
+                            </label>
+                            <input id="bill-ammount" type="number" placeholder="Add Ammount to pay" class="input rounded-3xl text-gray-400 bg-gray-200" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                            <span class="label-text font-bold">Pin Number</span>
+                            </label>
+                            <input value="1234" id="bill-pin" type="password" placeholder="Enter 4 Digit Pin Number" class="input rounded-3xl bg-gray-200" required />
+                            <!-- <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            </label> -->
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="pay-bill-btn" class="btn btn-primary rounded-3xl font-semibold text-lg bg-blue-600 border-none text-white">Pay Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
 
         <section id="transactions">

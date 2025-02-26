@@ -5,7 +5,7 @@ document.getElementById('bonus-btn')
             const couponRewards = 50;
             const bonusCoupon = document.getElementById('bonus-coupon').value;
             const mainBalance = getInnerTextById('main-balance');
-            if(bonusCoupon === 'HelloWorld'){
+            if(bonusCoupon === 'Payooo'){
                 const sum = couponRewards + mainBalance;
                 setInnerTextByIdAndValue('main-balance', sum);
 

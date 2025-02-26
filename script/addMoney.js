@@ -31,13 +31,14 @@ document.getElementById('add-money-btn')
                         const sum = convertedMainBalance + convertedAmmount;
                         setInnerTextByIdAndValue('main-balance', sum);
 
+                        const now = new Date();
+                        const dateTime = now.toLocaleString();
                         const container = document.getElementById('transaction-container');
                         const div = document.createElement('div');
-                        div.classList.add("bg-white", "p-3", "mx-3", "rounded-xl");
+                        div.classList.add("bg-white", "p-3", "mx-3", "rounded-xl", "my-3");
                         div.innerHTML = `
-                        <h1 class = "text-green-600">Succesfully!</h1>
-                        <p>Added money $${convertedAmmount} from ${accountNumber}</p>
-                        <h3> ${selectedBank} </h3>
+                        <p><span class = "text-green-600">Succesfully!</span> Added money $${convertedAmmount} from ${accountNumber} ${selectedBank} ${dateTime}.</p>
+                        <h3>Balance: $ ${sum} Thank You. </h3>
                         `;
                         container.appendChild(div);
                     }else{
