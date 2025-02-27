@@ -21,6 +21,7 @@ document.getElementById('add-money-btn')
             const convertedAmmount = getInputValueById('ammount');
             const convertedPin = getInputValueById('pin');
             const convertedMainBalance = getInnerTextById('main-balance');
+            const addMoneyName = document.getElementById('add-money-name').innerText;
             if(convertedAmmount <= 0){
                 alert('You can not add money');
                 return;
@@ -35,10 +36,15 @@ document.getElementById('add-money-btn')
                         const dateTime = now.toLocaleString();
                         const container = document.getElementById('transaction-container');
                         const div = document.createElement('div');
-                        div.classList.add("bg-white", "p-3", "mx-3", "rounded-xl", "my-3");
+                        div.classList.add("bg-white", "p-3", "mx-3", "rounded-xl", "my-3", "flex", "justify-center", "items-center", "gap-3");
                         div.innerHTML = `
-                        <p><span class = "text-green-600">Succesfully!</span> Added money $${convertedAmmount} from ${accountNumber} ${selectedBank} ${dateTime}.</p>
-                        <h3>Balance: $ ${sum} Thank You. </h3>
+                        <div class = "w-20 m-1 p-2 bg-base-200 border rounded-full">
+                            <img src="./assets/purse1.png" alt="">
+                        </div>
+                        <div>
+                            <h1 class = "text-xl"> ${addMoneyName} </h1>
+                            <p><span class = "text-green-600">Succesfully!</span> Added money $${convertedAmmount} from ${accountNumber} ${selectedBank} ${dateTime}. Balance: $ ${sum} Thank You. </p>
+                        </div>
                         `;
                         container.appendChild(div);
                     }else{

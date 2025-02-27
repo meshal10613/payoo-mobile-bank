@@ -6,6 +6,7 @@ document.getElementById('cashout-btn')
             const convertedAmmount = getInputValueById('cashout-ammount');
             const convertedPin =  getInputValueById('cashout-pin');
             const convertedMainBalance =  getInnerTextById('main-balance');
+            const cashoutName = document.getElementById('cashout-name').innerText;
             if(convertedAmmount <= 0){
                 alert('You can not Cash Out');
                 return;
@@ -22,10 +23,15 @@ document.getElementById('cashout-btn')
                         const dateTime = now.toLocaleString();
                         const container = document.getElementById('transaction-container');
                         const div = document.createElement('div');
-                        div.classList.add("bg-white", "p-3", "mx-3", "rounded-xl", "my-3");
+                        div.classList.add("bg-white", "p-3", "mx-3", "rounded-xl", "my-3", "flex", "justify-center", "items-center", "gap-3");
                         div.innerHTML = `
-                            <p><span class = "text-green-600">Succesfully!</span> Cashout $${convertedAmmount} to ${agentAccountNumber} ${dateTime}.</p>
-                            <h3>Balance: $ ${sum} Thank You.</h3>
+                            <div class = "w-20 m-1 p-2 bg-base-200 border rounded-full">
+                                <img src="./assets/purse1.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class = "text-xl"> ${cashoutName} </h1>
+                                <p><span class = "text-green-600">Succesfully!</span> Cashout $${convertedAmmount} to ${agentAccountNumber} ${dateTime}. Balance: $ ${sum} Thank You.</p>
+                            </div>
                         `;
                         container.appendChild(div);
                     }
